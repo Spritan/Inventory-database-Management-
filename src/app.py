@@ -1,1 +1,1 @@
-import pyqt5
+import PyQt5

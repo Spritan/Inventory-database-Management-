@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>599</height>
+    <width>1152</width>
+    <height>839</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Parts Inventory Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Pictures/icons/fugue/fugue-icons-3.5.6/icons-shadowless/abacus.png</normaloff>../../../Pictures/icons/fugue/fugue-icons-3.5.6/icons-shadowless/abacus.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -19,8 +23,8 @@
      <rect>
       <x>0</x>
       <y>60</y>
-      <width>791</width>
-      <height>451</height>
+      <width>1151</width>
+      <height>731</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -36,31 +40,34 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>20</x>
         <y>0</y>
-        <width>561</width>
-        <height>41</height>
+        <width>601</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="text">
-       <string>Search of references with count level lower or equal to:</string>
+       <string>Search of references with count level lower or equal to :</string>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget">
+     <widget class="QTableWidget" name="Table">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>40</y>
-        <width>761</width>
-        <height>361</height>
+        <y>50</y>
+        <width>1121</width>
+        <height>591</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 45 12pt &quot;URW Gothic L&quot;;</string>
+       <string notr="true">font: 45 10pt &quot;URW Gothic L&quot;;</string>
       </property>
       <column>
        <property name="text">
         <string>ID</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
        </property>
       </column>
       <column>
@@ -85,7 +92,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Number of Holes</string>
+        <string>No. of Holes</string>
        </property>
       </column>
       <column>
@@ -104,6 +111,42 @@
        </property>
       </column>
      </widget>
+     <widget class="QSpinBox" name="Count_filter_txt">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>10</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Search_btn">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>10</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Refresh_btn">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>650</y>
+        <width>211</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -121,7 +164,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>791</width>
+      <width>1151</width>
       <height>61</height>
      </rect>
     </property>
@@ -143,7 +186,7 @@ background-color: rgb(75, 75, 75);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1152</width>
      <height>30</height>
     </rect>
    </property>
